@@ -12,7 +12,7 @@ final class Base64DecoderViewController: NSViewController {
     
     @RestorableState("base64.sourceType") private var sourceType = SourceType.text
     @RestorableState("base64.rawString") private var rawString = defaultRawString
-    @Observable private var formattedString = defaultBase64String
+    @XMObservable private var formattedString = defaultBase64String
     
     override func loadView() { self.view = cell }
     

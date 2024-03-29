@@ -15,8 +15,8 @@ final class IconGeneratorViewController: NSViewController {
     @RestorableState("icongen.scale") var scale: IconSet.Scale = .x1024
     @RestorableData("icongen.image") var imageItem: ImageItem? = nil
     @RestorableData("icongen.templete") var templeteName = "original"
-    @Observable var iconTemplete: IconTemplete? = nil { didSet { templeteName = iconTemplete?.identifier ?? "original" } }
-    @Observable var previewImage: NSImage? = nil
+    @XMObservable var iconTemplete: IconTemplete? = nil { didSet { templeteName = iconTemplete?.identifier ?? "original" } }
+    @XMObservable var previewImage: NSImage? = nil
     
     let iconTempleteManager = IconImageManager.shared
     
@@ -103,7 +103,7 @@ final class IconGeneratorViewController: NSViewController {
                 
         switch self.exportType {
         case .iconFolder: IconFolderGenerator.make(item: item, templete: templete, to: url) => registerTask(_:)
-        case .iosAssets: IosIconGenerator.make(item: item, options: iosOptions, to: url) => registerTask(_:)
+        case .iosAssets: IosIconGenerator.make(item: item, templete: templete, options: iosOptions, to: url) => registerTask(_:)
         case .icns: IcnsGenerator.make(item: item, templete: templete, to: url) => registerTask(_:)
         case .iconset: IconsetGenerator.make(item: item, templete: templete, to: url) => registerTask(_:)
         case .androidAssets: AndroidIconGenerator.make(item: item, templete: templete, to: url) => registerTask(_:)

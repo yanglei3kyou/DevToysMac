@@ -15,19 +15,19 @@ final class ColorPickerViewController: NSViewController {
     @RestorableState("colorpick.pickertype") var pickerType: ColorPickerType = .hsbBox
     @RestorableState("colorpick.copyType") var copyType: ColorCopyType = .webRGBA
     
-    @Observable var hex3: String? = nil
-    @Observable var hex6: String = ""
-    @Observable var hex8: String = ""
+    @XMObservable var hex3: String? = nil
+    @XMObservable var hex6: String = ""
+    @XMObservable var hex8: String = ""
     
-    @Observable var red: CGFloat = 0
-    @Observable var green: CGFloat = 0
-    @Observable var blue: CGFloat = 0
+    @XMObservable var red: CGFloat = 0
+    @XMObservable var green: CGFloat = 0
+    @XMObservable var blue: CGFloat = 0
     
-    @Observable var cyan: CGFloat = 0
-    @Observable var magenta: CGFloat = 0
-    @Observable var yellow: CGFloat = 0
-    @Observable var key: CGFloat = 0
-    @Observable var copyValue = ""
+    @XMObservable var cyan: CGFloat = 0
+    @XMObservable var magenta: CGFloat = 0
+    @XMObservable var yellow: CGFloat = 0
+    @XMObservable var key: CGFloat = 0
+    @XMObservable var copyValue = ""
     
     override func loadView() { self.view = cell }
     

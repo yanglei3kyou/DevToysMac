@@ -11,7 +11,7 @@ import Quartz
 final class AudioConverterViewController: NSViewController {
     private let cell = AudioConverterView()
     
-    @Observable var tasks = [AudioConvertTask]()
+    @XMObservable var tasks = [AudioConvertTask]()
     @RestorableData("audio.format") var format: AudioConvertFormat = convertGroups[0].formats[1]
     @RestorableState("audio.removeSource") var removeSource = false
     

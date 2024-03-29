@@ -13,7 +13,7 @@ final class QRCodeGeneratorViewController: NSViewController {
     
     @RestorableState("qrcode.rawString") var rawString = "Hello World"
     @RestorableState("qrcode.correctionLevel") var correctionLevel: QRInputCorrectionLevel = .default
-    @Observable var qrimage: NSImage? = nil
+    @XMObservable var qrimage: NSImage? = nil
     
     override func loadView() { self.view = cell }
     

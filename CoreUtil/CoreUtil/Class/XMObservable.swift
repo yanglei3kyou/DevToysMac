@@ -10,7 +10,7 @@ import Combine
 
 /// Publishedの10倍軽いPropertyWrapper
 @propertyWrapper
-public struct Observable<Value> {
+public struct XMObservable<Value> {
 
     public struct Publisher: Combine.Publisher {
         public typealias Output = Value

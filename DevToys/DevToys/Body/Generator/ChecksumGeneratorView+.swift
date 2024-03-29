@@ -13,9 +13,9 @@ final class ChecksumGeneratorViewController: NSViewController {
     @RestorableState("checksum.alg") private var hashAlgorithm = HashAlgorithm.md5
     @RestorableState("checksum.comparer") private var comparer = ""
     
-    @Observable private var output = ""
-    @Observable var isError = true
-    @Observable var fileURL: URL?
+    @XMObservable private var output = ""
+    @XMObservable var isError = true
+    @XMObservable var fileURL: URL?
     
     private let cell = ChecksumGeneratorView()
     

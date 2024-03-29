@@ -13,9 +13,9 @@ final class RegexTesterViewController: NSViewController {
     @RestorableState("rx.pattern") var pattern = #"(macOS|OS X) \d+\.\d+"#
     @RestorableState("rx.sample") var text = defaultText
     
-    @Observable var regex: NSRegularExpression? = nil
-    @Observable var isError = false
-    @Observable var matches = [NSRange]()
+    @XMObservable var regex: NSRegularExpression? = nil
+    @XMObservable var isError = false
+    @XMObservable var matches = [NSRange]()
     
     override func loadView() { self.view = cell }
     

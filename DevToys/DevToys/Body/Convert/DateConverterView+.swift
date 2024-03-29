@@ -10,7 +10,7 @@ import CoreUtil
 final class DateConverterViewController: NSViewController {
     private let cell = DateConverterView()
     
-    @Observable var date = Date()
+    @XMObservable var date = Date()
     
     private let isoFormatter = ISO8601DateFormatter()
     private let gmtFormatter = DateFormatter() => {

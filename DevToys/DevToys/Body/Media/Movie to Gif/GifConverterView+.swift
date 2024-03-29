@@ -12,7 +12,7 @@ import Quartz
 final class GifConverterViewController: NSViewController {
     private let cell = GifConverterView()
     
-    @Observable var tasks = [GifConvertTask]()
+    @XMObservable var tasks = [GifConvertTask]()
     @RestorableState("gif.width") var width = 640.0
     @RestorableState("gif.fps") var fps = 10
     @RestorableState("gif.removeSource") var removeSource = false

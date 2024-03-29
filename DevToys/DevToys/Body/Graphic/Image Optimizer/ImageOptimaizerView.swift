@@ -10,7 +10,7 @@ import CoreUtil
 final class ImageOptimizerViewController: NSViewController {
     private let cell = ImageOptimizerView()
     
-    @Observable var tasks = [ImageOptimizeTask]()
+    @XMObservable var tasks = [ImageOptimizeTask]()
     @RestorableState("imop.level") var level = OptimizeLevel.medium
     @RestorableState("imop.override") var overrideSource = false
     

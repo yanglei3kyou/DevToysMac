@@ -16,7 +16,7 @@ final class ImageConverterViewController: NSViewController {
     @RestorableState("imc.width") private var width = 1280.0
     @RestorableState("imc.height") private var height = 720.0
     
-    @Observable var task: [ImageConvertTask] = []
+    @XMObservable var task: [ImageConvertTask] = []
     
     override func loadView() { self.view = cell }
     

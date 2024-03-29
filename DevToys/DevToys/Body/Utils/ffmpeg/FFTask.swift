@@ -11,7 +11,7 @@ final class FFTask {
     let duration: FFTime?
     let complete: Promise<Void, Error>
     
-    @Observable var progress = 0.0
+    @XMObservable var progress = 0.0
 
     func sendReport(_ report: FFProgressReport) {
         guard let duration = duration else { return }

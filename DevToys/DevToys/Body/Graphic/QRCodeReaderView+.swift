@@ -13,9 +13,9 @@ final class QRCodeReaderViewController: NSViewController {
     
     @RestorableState("qrcoder.inputtype") var inputType: QRCodeInputType = .photo
     
-    @Observable var image: CIImage? = nil
-    @Observable var detectedBound: CIQRCodeFeature?
-    @Observable var detectedMessage: String = ""
+    @XMObservable var image: CIImage? = nil
+    @XMObservable var detectedBound: CIQRCodeFeature?
+    @XMObservable var detectedMessage: String = ""
     
     private let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: nil)!
     private let detectionQueue = DispatchQueue(label: "qr.code.detector", qos: .userInteractive, attributes: .concurrent)

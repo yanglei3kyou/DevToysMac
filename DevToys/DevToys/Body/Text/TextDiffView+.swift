@@ -14,7 +14,7 @@ final class TextDiffViewController: NSViewController {
     @RestorableState("txtdiff.input1") var input1 = "Hello World!"
     @RestorableState("txtdiff.input2") var input2 = "Hello DevToys!"
     
-    @Observable var diffAttributedString = NSAttributedString()
+    @XMObservable var diffAttributedString = NSAttributedString()
     
     private let cell = TextDiffView()
 

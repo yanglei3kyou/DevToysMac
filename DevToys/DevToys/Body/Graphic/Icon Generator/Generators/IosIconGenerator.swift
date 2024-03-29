@@ -18,10 +18,10 @@ enum IosIconGenerator {
         static let applewatch = ExportOptions(rawValue: 1 << 4)
     }
     
-    static func make(item: ImageItem, options: ExportOptions, to destinationURL: URL) -> IconGenerateTask {
+    static func make(item: ImageItem, templete: IconTemplete, options: ExportOptions, to destinationURL: URL) -> IconGenerateTask {
         let complete = Promise<Void, Error>.tryAsync{
-            let image = item.image
-            let fillColor = NSColor.black
+            let image = templete.bake(image: item.image, scale: .x1024)
+            let fillColor = NSColor.clear
             
             guard
                 let s16 = image.resizedAspectFit(to: [16, 16], fillColor: fillColor).png,
