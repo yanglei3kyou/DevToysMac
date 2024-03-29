@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6B42318827AD1BC0002D135A /* HyphenationRemoverView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B42318727AD1BC0002D135A /* HyphenationRemoverView+.swift */; };
+		ADA74B162BB6A11500B27D12 /* IosIconGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA74B152BB6A11500B27D12 /* IosIconGenerator.swift */; };
 		B608540B27A66694003BF243 /* SectionButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B608540A27A66694003BF243 /* SectionButton+.swift */; };
 		B608541227A66A90003BF243 /* JSONYamlConverterView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B608541127A66A90003BF243 /* JSONYamlConverterView+.swift */; };
 		B608541527A66CC9003BF243 /* CoreUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64B1F5E27A4FC1900AC2601 /* CoreUtil.framework */; };
@@ -60,7 +61,6 @@
 		B672CFA027AAB8DD00391A5D /* FileDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672CF9F27AAB8DD00391A5D /* FileDrop.swift */; };
 		B673A90227AD0E78005512AB /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673A90127AD0E78005512AB /* DatePicker.swift */; };
 		B6789EBA27CA43E200D8B58C /* IconGeneratorView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6789EB927CA43E100D8B58C /* IconGeneratorView+.swift */; };
-		B6789EBC27CA48A300D8B58C /* IosIconGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6789EBB27CA48A300D8B58C /* IosIconGenerator.swift */; };
 		B6789EDF27CA5F5D00D8B58C /* IconsetGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6789EDE27CA5F5D00D8B58C /* IconsetGenerator.swift */; };
 		B6789EE127CA5F6900D8B58C /* IcnsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6789EE027CA5F6900D8B58C /* IcnsGenerator.swift */; };
 		B6789EE327CA5F7A00D8B58C /* IconFolderGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6789EE227CA5F7A00D8B58C /* IconFolderGenerator.swift */; };
@@ -226,6 +226,7 @@
 
 /* Begin PBXFileReference section */
 		6B42318727AD1BC0002D135A /* HyphenationRemoverView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HyphenationRemoverView+.swift"; sourceTree = "<group>"; };
+		ADA74B152BB6A11500B27D12 /* IosIconGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IosIconGenerator.swift; sourceTree = "<group>"; };
 		B608540A27A66694003BF243 /* SectionButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SectionButton+.swift"; sourceTree = "<group>"; };
 		B608541127A66A90003BF243 /* JSONYamlConverterView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONYamlConverterView+.swift"; sourceTree = "<group>"; };
 		B608541D27A67B48003BF243 /* NumberBaseConverterView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberBaseConverterView+.swift"; sourceTree = "<group>"; };
@@ -277,7 +278,6 @@
 		B672CF9F27AAB8DD00391A5D /* FileDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDrop.swift; sourceTree = "<group>"; };
 		B673A90127AD0E78005512AB /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		B6789EB927CA43E100D8B58C /* IconGeneratorView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IconGeneratorView+.swift"; sourceTree = "<group>"; };
-		B6789EBB27CA48A300D8B58C /* IosIconGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosIconGenerator.swift; sourceTree = "<group>"; };
 		B6789EDE27CA5F5D00D8B58C /* IconsetGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsetGenerator.swift; sourceTree = "<group>"; };
 		B6789EE027CA5F6900D8B58C /* IcnsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcnsGenerator.swift; sourceTree = "<group>"; };
 		B6789EE227CA5F7A00D8B58C /* IconFolderGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconFolderGenerator.swift; sourceTree = "<group>"; };
@@ -629,7 +629,7 @@
 		B6789EDD27CA5F5400D8B58C /* Generators */ = {
 			isa = PBXGroup;
 			children = (
-				B6789EBB27CA48A300D8B58C /* IosIconGenerator.swift */,
+				ADA74B152BB6A11500B27D12 /* IosIconGenerator.swift */,
 				B6789EDE27CA5F5D00D8B58C /* IconsetGenerator.swift */,
 				B6789EE027CA5F6900D8B58C /* IcnsGenerator.swift */,
 				B6789EE227CA5F7A00D8B58C /* IconFolderGenerator.swift */,
@@ -1113,7 +1113,6 @@
 				B608541E27A67B48003BF243 /* NumberBaseConverterView+.swift in Sources */,
 				B680A8AA27A8E106007CB707 /* HashGeneratorView+.swift in Sources */,
 				B6A4F2A427CD078100BBDE7E /* ImageDropView.swift in Sources */,
-				B6789EBC27CA48A300D8B58C /* IosIconGenerator.swift in Sources */,
 				B67A4CC327C0F4D4009277FB /* CircleHueBarView.swift in Sources */,
 				B67A4CC927C10493009277FB /* SaturationBarView.swift in Sources */,
 				B64B202027A523A200AC2601 /* ToolMenuCell.swift in Sources */,
@@ -1197,6 +1196,7 @@
 				B67A4C5027C0EA84009277FB /* Util+PixelPicker.swift in Sources */,
 				B6789EE527CA5F9500D8B58C /* IconGenerator+Model.swift in Sources */,
 				B6D1AEDF27A534960022FED2 /* BodyViewController.swift in Sources */,
+				ADA74B162BB6A11500B27D12 /* IosIconGenerator.swift in Sources */,
 				B67A4C5127C0EA84009277FB /* ShowAndHideCursor.swift in Sources */,
 				B61157C527C8D77A004D77A5 /* DragImageView.swift in Sources */,
 				B66536D027C9C56600CA1CEC /* SQLFormatterView+.swift in Sources */,
